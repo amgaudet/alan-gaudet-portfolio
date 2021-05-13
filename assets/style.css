@@ -91,6 +91,8 @@ h2 {
     position: absolute;
     bottom: 32px;
     left: 16px;
+    font-size: 28px;
+    background-color: #88BBD6;
 }
 
 .work section div {
@@ -100,7 +102,7 @@ h2 {
     flex-wrap: wrap;
 }
 
-.work section div img {
+.work section div a {
     padding: 8px;
 }
 
