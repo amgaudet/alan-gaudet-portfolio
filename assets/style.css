@@ -1,22 +1,118 @@
 * {
     box-sizing: border-box;
+    background-color: linen;
 }
 
 header {
     padding: 20px;
-    border-bottom: 8px solid black;
+    border-bottom: 8px solid #99d3df;
+    background-color: #88BBD6;
+    color: linen;
+
 }
 
 h1 {
-    display:inline-block
+    display:inline-block;
+    font-size: 40px;
+    background-color: #88BBD6;
+    margin-top: 20px;
+    margin-left: 16px;
 }
 
 nav {
     float: right;
     padding-right: 40px;
+    padding-top: 24px;
+    font-size: 24px;
+    background-color: #88BBD6;
 }
 
-nav ul li {
+nav ul {
+    background-color: #88BBD6;
+}
+
+nav ul li{
     display:inline-block;
+    
 }
 
+nav ul li a {
+    background-color: #88BBD6;
+    text-decoration: none;
+}
+
+main {
+    margin-left: 160px;
+    display: inline-block;
+    max-width: 80%;
+    background-color: linen;
+}
+
+.about {
+    display:flex;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+.about section {
+    display:flex;
+    flex: 1 0 88%;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin: 20px;
+}
+
+.about p {
+    margin-right: 40px;
+    max-width: 600px;
+}
+
+h2 {
+    font-size: 32px;
+    text-decoration: underline;   
+}
+
+.work {
+    display:flex;
+    flex-direction: column;
+}
+
+.work section {
+    display: flex;
+    flex: 1 0 88%;
+    margin: 12px;
+}
+
+.work .container {
+    position: relative;
+}
+
+.container h3  {
+    position: absolute;
+    bottom: 32px;
+    left: 16px;
+}
+
+.work section div {
+    display:flex;
+    flex: 1 0 25%;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.work section div img {
+    padding: 8px;
+}
+
+.contacts {
+    display:flex;
+}
+
+.contacts section {
+    display:flex;
+    flex: 0 0 75%;
+    flex-wrap:wrap;
+    align-items: center;
+    padding: 24px;
+    justify-content: space-around;
+}
