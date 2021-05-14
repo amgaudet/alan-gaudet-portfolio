@@ -1,20 +1,27 @@
+:root {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --main-color: linen;
+    --ice-color: #88BBD6;
+    --sky-blue: #99d3df;
+}
+
 * {
     box-sizing: border-box;
-    background-color: linen;
+    background-color: var(--main-color);
 }
 
 header {
     padding: 20px;
-    border-bottom: 8px solid #99d3df;
-    background-color: #88BBD6;
-    color: linen;
+    border-bottom: 8px solid var(--sky-blue);
+    background-color: var(--ice-color);
+    color: var(--main-color);
 
 }
 
 h1 {
     display:inline-block;
     font-size: 40px;
-    background-color: #88BBD6;
+    background-color:var(--ice-color);
     margin-top: 20px;
     margin-left: 16px;
 }
@@ -24,11 +31,11 @@ nav {
     padding-right: 40px;
     padding-top: 24px;
     font-size: 24px;
-    background-color: #88BBD6;
+    background-color:  var(--ice-color);
 }
 
 nav ul {
-    background-color: #88BBD6;
+    background-color:  var(--ice-color);
 }
 
 nav ul li{
@@ -37,7 +44,7 @@ nav ul li{
 }
 
 nav ul li a {
-    background-color: #88BBD6;
+    background-color:  var(--ice-color);
     text-decoration: none;
 }
 
@@ -45,7 +52,7 @@ main {
     margin-left: 160px;
     display: inline-block;
     max-width: 80%;
-    background-color: linen;
+    background-color: var(--main-color);
 }
 
 .about {
@@ -92,7 +99,7 @@ h2 {
     bottom: 32px;
     left: 16px;
     font-size: 28px;
-    background-color: #88BBD6;
+    background-color: var(--ice-color);
 }
 
 .work section div {
@@ -117,4 +124,10 @@ h2 {
     align-items: center;
     padding: 24px;
     justify-content: space-around;
+}
+
+@media screen and (max-width: 768px) {
+    .about section, .work section{
+        flex-wrap: wrap;
+    }
 }
