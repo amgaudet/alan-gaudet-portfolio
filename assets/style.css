@@ -11,6 +11,10 @@
 }
 
 header {
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 20px;
     border-bottom: 8px solid var(--sky-blue);
     background-color: var(--ice-color);
@@ -19,7 +23,7 @@ header {
 }
 
 h1 {
-    display:inline-block;
+    /* display:inline-block; */
     font-size: 40px;
     background-color:var(--ice-color);
     margin-top: 20px;
@@ -40,48 +44,45 @@ nav ul {
 
 nav ul li{
     display:inline-block;
-    
+    background-color:  var(--ice-color);
 }
 
 nav ul li a {
     background-color:  var(--ice-color);
     text-decoration: none;
+    color: var(--main-color);
 }
 
 main {
-    margin-left: 160px;
-    display: inline-block;
-    max-width: 80%;
     background-color: var(--main-color);
 }
 
 .about {
     display:flex;
     flex-direction: column;
-    margin-top: 80px;
+    padding-top: 80px;
 }
 
-.about section {
+img {
+    object-fit: contain;
+}
+
+.about-sec {
     display:flex;
-    flex: 1 0 88%;
-    flex-wrap: nowrap;
-    flex-direction: row;
-    margin: 20px;
-}
-
-.about p {
-    margin-right: 40px;
-    max-width: 600px;
+    justify-content: center;
+    margin: 40px;
 }
 
 h2 {
     font-size: 32px;
-    text-decoration: underline;   
+    text-decoration: underline;
+    margin: 32px;   
 }
 
 .work {
     display:flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .work section {
@@ -90,13 +91,17 @@ h2 {
     margin: 12px;
 }
 
+.container {
+    border-color: 12px solid var(--ice-color);
+}
+
 .work .container {
     position: relative;
 }
 
 .container h3  {
     position: absolute;
-    bottom: 32px;
+    top: 32px;
     left: 16px;
     font-size: 28px;
     background-color: var(--ice-color);
@@ -124,10 +129,4 @@ h2 {
     align-items: center;
     padding: 24px;
     justify-content: space-around;
-}
-
-@media screen and (max-width: 768px) {
-    .about section, .work section{
-        flex-wrap: wrap;
-    }
 }
